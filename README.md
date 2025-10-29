@@ -1,2 +1,1 @@
-# react_django
-# react_django
+Projeto simples para criação e visualização de notas utilizando React + Django
