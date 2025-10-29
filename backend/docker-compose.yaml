@@ -1,0 +1,17 @@
+services:
+  db:
+    container_name: postgres
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_DB: db-projeto
+      POSTGRES_USER: react-django
+      POSTGRES_PASSWORD: react-django123
+# https://github.com/docker-library/postgres/pull/1259 mudança no volume
+    volumes:
+      - pgdata:/var/lib/postgresql
+    ports:
+      - "5432:5432"
+ 
+volumes:
+  pgdata:
